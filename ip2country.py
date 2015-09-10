@@ -1,6 +1,6 @@
-from SOAPpy import WSDL
+from suds.client import Client
 
-wsdlFile = 'http://www.w3schools.com/webservices/tempconvert.asmx?WSDL'
-server = WSDL.Proxy(wsdlFile)
-print server.show_methods()
-print server.
+wsdlFile = 'http://9kgames.com/WS/WSIP2Country.asmx?WSDL'
+
+client = Client(wsdlFile)
+print client
