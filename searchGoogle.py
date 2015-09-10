@@ -25,7 +25,7 @@ def search_info(tag):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Search info from Google')
-    parser.add_argument('--tag', action="store", dest="tag", default='US open results')
+    parser.add_argument('--tag', action="store", dest="tag", default='python books')
     # parse arguments
     given_args = parser.parse_args()
     search_info(given_args.tag)
