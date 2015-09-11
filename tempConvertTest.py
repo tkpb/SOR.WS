@@ -1,7 +1,6 @@
 from suds.client import Client
 
 wsdlFile = 'http://www.w3schools.com/webservices/tempconvert.asmx?WSDL'
-#serv_url = 'http://www.w3schools.com/webservices/tempconvert.asmx'
 
 client = Client(wsdlFile)
 #print client
