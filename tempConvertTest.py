@@ -26,12 +26,11 @@ def setup():
 
 
 setup()
-while userImput != 'exit':
+while len(userImput) > 0:
     userImput = input("Temperatura para converter: ")
-    if userImput != 'exit':
-        if tempChoice == 1:
-            print 'Result: ' + fromC(userImput) + 'F'
-        elif tempChoice == 2:
-            print 'Result: ' + fromF(userImput) + 'C'
-        else:
-            setup()
+    if tempChoice == 1:
+        print 'Result: ' + fromC(userImput) + 'F'
+    elif tempChoice == 2:
+        print 'Result: ' + fromF(userImput) + 'C'
+    else:
+        setup()
