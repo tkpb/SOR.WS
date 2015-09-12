@@ -29,8 +29,8 @@ setup()
 while userImput != 'exit':
     userImput = input("Temperatura para converter: ")
     if tempChoice == 1:
-        fromC(userImput)
+        print fromC(userImput) + 'F'
     elif tempChoice == 2:
-        fromF(userImput)
+        print fromF(userImput) + 'C'
     else:
         setup()
