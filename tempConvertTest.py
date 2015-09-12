@@ -16,8 +16,13 @@ def fromF(temperature):
 
 def setup():
     global tempChoice
-    while tempChoice != 1 or 2:
+    valid = False
+    while not valid:
         tempChoice = input("Escolha a operacao: (1) C para F (2) F para C")
+        if tempChoice == 1:
+            valid = True
+        elif tempChoice == 2:
+            valid = True
 
 
 setup()
