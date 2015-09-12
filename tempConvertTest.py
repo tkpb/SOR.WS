@@ -18,7 +18,7 @@ def setup():
     global tempChoice
     valid = False
     while not valid:
-        tempChoice = input("Escolha a operacao: (1) C para F (2) F para C")
+        tempChoice = input("Escolha a operacao: (1) C para F (2) F para C\n")
         if tempChoice == 1:
             valid = True
         elif tempChoice == 2:
@@ -28,9 +28,10 @@ def setup():
 setup()
 while userImput != 'exit':
     userImput = input("Temperatura para converter: ")
-    if tempChoice == 1:
-        print fromC(userImput) + 'F'
-    elif tempChoice == 2:
-        print fromF(userImput) + 'C'
-    else:
-        setup()
+    if userImput != 'exit':
+        if tempChoice == 1:
+            print 'Result: ' + fromC(userImput) + 'F'
+        elif tempChoice == 2:
+            print 'Result: ' + fromF(userImput) + 'C'
+        else:
+            setup()
